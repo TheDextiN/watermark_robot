@@ -95,7 +95,7 @@ def robot_handler(msg):
 
 
 if __name__ == "__main__": #* Check to see it is entered as a library.
-    if ! os.path.isdir("temp"):
+    if not os.path.isdir("temp"):  # Corrected line
         os.mkdir("temp")
 
     try:
